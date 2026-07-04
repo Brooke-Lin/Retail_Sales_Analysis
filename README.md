@@ -1,17 +1,17 @@
 # Retail Sales Analysis SQL Project
 
-##Project Overview
+## Project Overview
 This project demonstrates SQL skills commonly used in data analysis, including data exploration, cleaning, and business-driven insights.
 The dataset represents retail sales transactions and is used to answer real-world business questions such as revenue trends, customer behavior, and product performance.
 
-##Objectives
+## Objectives
 * Create and manage a retail sales database
 * Clean and validate dataset quality
 * Perform exploratory data analysis (EDA)
 * Extract business insights using SQL queries
 * Practice advanced SQL concepts (GROUP BY, HAVING, CTEs, Window Functions)
 
-###Database Setup
+### Database Setup
 1. Create Database
 ```sql
 CREATE DATABASE retail_sales_project;
@@ -32,7 +32,7 @@ CREATE TABLE retail_sales (
 );
 ```
 
-###Data Cleaning
+### Data Cleaning
 Before analysis, the dataset is checked for missing values.
 ```sql
 SELECT *
@@ -48,7 +48,7 @@ WHERE transaction_id IS NULL
    OR total_amount IS NULL;
 ```
 
-###Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 1. Total Transactions & Customers
 ```sql
 SELECT 
@@ -63,7 +63,7 @@ SELECT DISTINCT product_category
 FROM retail_sales;
 ```
 
-###Business Analysis & Insight
+### Business Analysis & Insight
 1. Show all sales transactions that occurred after 1 January 2023.
 ```sql
 SELECT *
@@ -161,7 +161,7 @@ GROUP BY customer_id
 ORDER BY total_spending DESC;
 ```
 
-##Key Findings
+## Key Findings
 * Revenue is concentrated in a small group of high-value customers
 * Certain product categories contribute significantly more to total sales
 * Seasonal/monthly trends show variation in purchasing behavior
